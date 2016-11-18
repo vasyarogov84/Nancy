@@ -4,6 +4,7 @@ namespace FriendLetter.Objects
   {
     private string _recipient;
     private string _sender;
+    private int _date;
 
     public string GetRecipient()
     {
@@ -13,6 +14,11 @@ namespace FriendLetter.Objects
     public string GetSender()
   {
     return _sender;
+  }
+
+  public int GetDate()
+  {
+    return  _date;
   }
 
   public void SetSender(string newSender)
@@ -25,6 +31,11 @@ namespace FriendLetter.Objects
     public void SetRecipient(string newRecipient)
     {
       _recipient = newRecipient;
+    }
+
+    public void SetDate( int newDate)
+    {
+      _date =  newDate;
     }
   }
 }
